@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Plataforma social — HTML5 + CSS3 com design system, grid e componentes.">
+  <title>Início — Instituto Futuro Melhor</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="container navbar">
+    <a class="brand" href="index.html">Instituto Futuro Melhor</a>
+    <button class="hamburger" aria-label="Abrir menu" data-burger>☰</button>
+    <nav class="menu" data-menu aria-label="Principal">
+      <a href="index.html" class="active">Início</a>
+      <div class="menu-item">
+        <a href="projetos.html" class="" aria-haspopup="true" aria-expanded="false">Projetos ▾</a>
+        <div class="submenu" role="menu">
+          <a role="menuitem" href="projetos.html#mentoria">Mentoria Jovem</a>
+          <a role="menuitem" href="projetos.html#feira">Feira Solidária</a>
+          <a role="menuitem" href="projetos.html#inclusao">Inclusão Digital</a>
+        </div>
+      </div>
+      <a href="cadastro.html" class="">Cadastro</a>
+      <a href="#" data-open-modal class="btn btn-secondary">Quero doar</a>
+    </nav>
+  </div>
+</header>
+<main class="container"><div id="app"></div>
+
+<section class="hero u-pt-32" aria-labelledby="boasvindas">
+  <div>
+    <h1 id="boasvindas">Transformando realidades com educação e solidariedade</h1>
+    <p>Somos uma organização sem fins lucrativos dedicada a projetos sociais que ampliam oportunidades por meio de educação, cultura e cidadania.</p>
+    <p><a class="btn" href="projetos.html">Ver projetos sociais</a></p>
+  </div>
+  <figure>
+    <picture>
+      <source srcset="assets/images/hero.webp" type="image/webp">
+      <source srcset="assets/images/hero.png" type="image/png">
+      <img src="assets/images/hero.png" width="800" height="520" alt="Voluntários sorrindo em atividade comunitária">
+    </picture>
+    <figcaption class="note">Nossas ações contam com voluntários de diversas áreas.</figcaption>
+  </figure>
+</section>
+
+<div class="alert alert-info">Plataforma em constante melhoria — confira nossos projetos e participe!</div>
+
+<section aria-labelledby="contato">
+  <h2 id="contato">Contato</h2>
+  <div class="row">
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card">
+        <h3>Endereço</h3>
+        <p>Rua Solidária, 123 — Centro, Fortaleza/CE</p>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card">
+        <h3>Telefone</h3>
+        <p><a href="tel:+5585999999999">+55 (85) 99999-9999</a></p>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card">
+        <h3>E-mail</h3>
+        <p><a href="mailto:contato@institutofuturomelhor.org">contato@institutofuturomelhor.org</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="midia">
+  <h2 id="midia">Na mídia</h2>
+  <p>Assista ao vídeo institucional com nossa história e impacto:</p>
+  <video controls width="100%" poster="assets/images/poster.png">
+    <source src="assets/video/institucional.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo HTML5. 
+  </video>
+</section>
+
+</main>
+<footer class="container" role="contentinfo">
+  <p>© 2025 Instituto Futuro Melhor · CNPJ 00.000.000/0001-00 · <a href="mailto:contato@institutofuturomelhor.org">contato@institutofuturomelhor.org</a></p>
+</footer>
+
+<div class="modal-backdrop" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="doar-title">
+    <h2 id="doar-title">Faça uma doação</h2>
+    <p class="u-mb-16">Contribua com nossa missão. Escolha um valor e forma de pagamento.</p>
+    <div class="row u-mb-16">
+      <div class="col-12 col-sm-6"><button class="btn">R$ 20</button></div>
+      <div class="col-12 col-sm-6"><button class="btn">R$ 50</button></div>
+      <div class="col-12 col-sm-6"><button class="btn">R$ 100</button></div>
+      <div class="col-12 col-sm-6"><button class="btn btn-ghost">Outro valor</button></div>
+    </div>
+    <button class="btn" data-close-modal>Fechar</button>
+  </div>
+</div>
+<div class="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/mask.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
